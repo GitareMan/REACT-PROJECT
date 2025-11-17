@@ -6,7 +6,7 @@ export const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <h1 className="text-xl font-bold tracking-wider">STEPHEN O'CONNELL</h1>
+          <h1 className="text-xl font-bold tracking-wider">IHOR DROZD</h1>
           
           <nav className="hidden md:flex items-center gap-8">
             <a href="#music" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
