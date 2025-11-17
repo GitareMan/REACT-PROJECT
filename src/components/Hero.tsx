@@ -26,7 +26,7 @@ export const Hero = () => {
             <div className="aspect-video rounded-lg overflow-hidden bg-secondary border border-border shadow-2xl">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/u9vn04byd2I"
+                src="https://www.youtube.com/embed/4JqhlATilDs"
                 title="Project Amalgam Demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
