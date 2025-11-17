@@ -1,3 +1,5 @@
+import { OptimizedImage } from "@/components/OptimizedImage";
+
 export const ListenSection = () => {
   return (
     <section className="py-24 px-6 bg-background">
@@ -22,13 +24,12 @@ export const ListenSection = () => {
           </div>
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
-              <img
-                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop"
-                alt="Music production workspace"
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-              />
-            </div>
+            <OptimizedImage
+              src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop"
+              alt="Music production workspace"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+              wrapperClassName="aspect-[4/3] rounded-lg shadow-2xl"
+            />
           </div>
         </div>
       </div>
