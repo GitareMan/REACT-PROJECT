@@ -18,14 +18,14 @@ export const ListenSection = () => {
                 scrolling="no"
                 frameBorder="no"
                 allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/YOUR_TRACK_ID&color=%23ef4444&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
+                src="https://www.youtube.com/embed/AseQ_RUI1WM"
               />
             </div>
           </div>
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <OptimizedImage
-              src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=800&h=600&fit=crop"
+              src="/images/c_studio.png"
               alt="Music production workspace"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               wrapperClassName="aspect-[4/3] rounded-lg shadow-2xl"
