@@ -25,7 +25,7 @@ export const ListenSection = () => {
 
           <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <OptimizedImage
-              src="/images/c_studio.png"
+              src="https://images.squarespace-cdn.com/content/v1/5e2105e04be93e7c47a44009/36302baa-3789-477e-8682-ffc0e6dbed34/Record-Label-Graphic.png"
               alt="Music production workspace"
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
               wrapperClassName="aspect-[4/3] rounded-lg shadow-2xl"

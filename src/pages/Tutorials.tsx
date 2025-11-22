@@ -75,13 +75,13 @@ const [tutorials, setPosts] = useState([]);
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="relative w-20 h-20 border-2 border-foreground rounded-lg flex items-center justify-center transform -rotate-12">
                 <div className="text-xs font-bold">
-                  <div>CMD</div>
-                  <div>SHIFT</div>
+                  <div>FRETLESS</div>
+                  <div>MUSIC</div>
                   <div>NEW</div>
                 </div>
               </div>
               <h1 className="text-6xl font-bold">
-                Cmd<span className="text-destructive">SHIFT</span>New
+                Fretless<span className="text-destructive">Music</span>New
               </h1>
             </div>
 
@@ -95,7 +95,7 @@ const [tutorials, setPosts] = useState([]);
               className="bg-destructive hover:bg-destructive/90 text-destructive-foreground"
               asChild
             >
-              <a href="https://www.youtube.com/@StephenOConnellCmdShiftNew" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@FRETLESS-MUSIC" target="_blank" rel="noopener noreferrer">
                 <Youtube className="mr-2 h-5 w-5" />
                 SUBSCRIBE TODAY
               </a>

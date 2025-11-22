@@ -3,20 +3,24 @@ import { Footer } from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { OptimizedImage } from "@/components/OptimizedImage";
 
+import ReactPlayer from 'react-player'
+import video1 from '/music/Melodic House Dream Music.mp4'
+
 const Music = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen ">
       <Header />
       
-      <main className="pt-20">
+
+        
         {/* Hero Section */}
         <section className="relative min-h-[600px] flex items-center">
           <div className="absolute inset-0 bg-gradient-to-b from-background/50 to-background z-10" />
           <OptimizedImage
             src="https://images.squarespace-cdn.com/content/v1/63897fd9091d716b97aff997/cb3f6498-bb5d-4b17-89ba-8cd083d9192d/2019-11-06.jpg"
             alt="Music production studio setup"
-            className="absolute inset-0 w-full h-full object-cover"
-            priority
+            wrapperClassName="aspect-[4/3] rounded-lg shadow-2xl"
+            
           />
           
           <div className="container mx-auto px-6 relative z-20">
@@ -32,7 +36,7 @@ const Music = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground"
                 asChild
               >
-                <a href="https://soundcloud.com/stephen-oconnell-composer" target="_blank" rel="noopener noreferrer">
+                <a href="https://soundcloud.com/" target="_blank" rel="noopener noreferrer">
                   Visit SoundCloud
                 </a>
               </Button>
@@ -51,19 +55,9 @@ const Music = () => {
               Check out this playlist of featured film score examples!
             </p>
             
-            {/* YouTube Embed */}
-            <div className="aspect-video w-full rounded-lg overflow-hidden bg-muted">
-              <iframe
-                width="100%"
-                height="100%"
-                src="https://www.youtube.com/embed/MdYlHlW_9MY"
-                title="Film Score Playlist"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="w-full h-full"
-              />
-            </div>
+
+            {/* Video Added Below */}
+            <ReactPlayer src={video1} controls  width="100%" height="100%" />
           </div>
         </section>
 
@@ -118,7 +112,7 @@ const Music = () => {
             </div>
           </div>
         </section>
-      </main>
+
 
       <Footer />
     </div>

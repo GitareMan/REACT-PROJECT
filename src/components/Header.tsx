@@ -1,4 +1,5 @@
-import { Youtube, Instagram, Music, Menu } from "lucide-react";
+import { Music, Menu } from "lucide-react";
+import { BsYoutube, BsInstagram } from "react-icons/bs";
 import { Button } from "@/components/ui/button";
 import React, { useEffect, useState } from 'react';
 import api from '../api';
@@ -59,11 +60,13 @@ export const Header = () => {
           <div className="flex items-center gap-3">
             {/* Social Icons (Hidden on very small screens if needed, currently visible) */}
             <div className="hidden sm:flex items-center gap-3">
-              <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                <Youtube className="h-5 w-5" />
+              <Button  size="icon" variant="ghost" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
+                <a href="https://www.youtube.com/@FRETLESS-MUSIC" target="_blank" rel="noopener noreferrer">
+                  <BsYoutube className="h-5 w-5" />
+                </a>
               </Button>
               <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
-                <Instagram className="h-5 w-5" />
+                <BsInstagram className="h-5 w-5" />
               </Button>
               <Button size="icon" variant="ghost" className="rounded-full hover:bg-primary hover:text-primary-foreground transition-all">
                 <Music className="h-5 w-5" />

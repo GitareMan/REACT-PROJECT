@@ -53,7 +53,7 @@ const Projects = () => {
             className="mt-8 text-lg px-8 py-6 bg-primary hover:bg-primary/90"
             asChild
           >
-            <a href="https://www.pianobook.co.uk/profile/steveoc/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.pianobook.co.uk/" target="_blank" rel="noopener noreferrer">
               Visit Profile
             </a>
           </Button>
@@ -66,15 +66,9 @@ const Projects = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Pianobook Releases: FREE Libraries for You to Download
           </h2>
-
           <div className="space-y-32">
-            
             {projects.map((project, index) => (
-              <div
-                key={project.title}
-                className="animate-fade-in"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+              <div  key={project.title} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
                 <div className="grid lg:grid-cols-2 gap-12 items-start">
                   <div className="space-y-6">
                     <div className="aspect-video rounded-lg overflow-hidden bg-secondary border border-border shadow-2xl">
@@ -109,7 +103,6 @@ const Projects = () => {
                     </Button>
                   </div>
                 </div>
-
                 {index < project.length - 1 && (
                   <div className="mt-16 border-t border-border" />
                 )}
